@@ -154,6 +154,10 @@ namespace Serhun_EM13_1_HW5
                 int[] numberCount = {0, 0, 0, 0, 0, 0};
                 Console.WriteLine("Enter the length of the array: ");
                 int length = Convert.ToInt32(Console.ReadLine());
+                if (length < 1)
+                {
+                    throw new Exception("Length must be greater than 0");
+                }
                 int[] arr = new int[length];
                 int arrayNum = 2;
                 for (int i = 0; i < length; i++)
